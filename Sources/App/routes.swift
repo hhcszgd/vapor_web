@@ -6,7 +6,9 @@ public func routes(_ router: Router) throws {
     router.get { req in
         return try req.view().render("welcome")
     }
-    
+    router.get("a1") { (req) -> Future<View> in
+        return try req.view().render("test1")
+    }
     // Says hello
     router.get("hello", String.parameter) { req -> Future<View> in
         return try req.view().render("hello", [
