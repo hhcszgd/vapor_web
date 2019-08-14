@@ -3,6 +3,27 @@
 <head>
 	<title>#get(title)</title>
 	<link rel="stylesheet" href="/styles/app.css">
+    <link rel="stylesheet" href="/styles/app.css">
+ <script type="text/javascript" src="/styles/js1.js"></script> 
+
+<!--
+<script>
+function hello() {
+alert("hello world");
+}
+</script>
+<script>
+function demo2() {
+alert("hello html event ")
+}
+</script>
+
+<script>
+function demo() {
+alert("hello html event ")
+}
+</script>
+-->
 </head>
 <body>
     #get(body)

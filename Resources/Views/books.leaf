@@ -1,0 +1,21 @@
+
+
+#set("title") { It works }
+
+#set("body") {
+
+        <!-- 点击事件是js的函数demo() , 这个方法可以定义在base模板里的header中,用<script></script> 括起来 , 也可以单独写一个.js文件 , 直接在.js文件中写函数,再在base的header中引用起来 -->
+        <button onclick="demo()">demo</button>
+        <button onclick="hello()">hello</button>
+        <div class="test1">
+            <img src="/images/a1.png">
+        </div>
+        <ul>
+                    #for(book in books) {
+                    <p  style="text-align:center" >书名:<span style="color:red">#(book.title)</span>书页:<span style="color:red">#(book.pages)</span>
+                    </p>
+                    }
+        </ul>
+}
+
+#embed("base")
